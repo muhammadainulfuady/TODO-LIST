@@ -1,9 +1,10 @@
 const port = 3000;
 const express = require("express");
-const db = require("./connect");
-const response = require("./response");
+const db = require("./config/database");
+const response = require("./helper/response");
 const cors = require("cors");
 const app = express();
+const conf = require("./src/config/database");
 
 app.use(cors());
 
