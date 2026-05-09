@@ -10,5 +10,4 @@ const setTodos = async () => {
     await db.promise().query(query, [id_user, judul, deskripsi, is_completed]);
   }
 };
-
 module.exports = setTodos;

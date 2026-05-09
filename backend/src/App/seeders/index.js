@@ -1,5 +1,5 @@
-const setUser = require("./userSeeder");
-const setTodos = require("./todoSeeder");
+const setUser  = require("./userSeeder");
+const setTodos  = require("./todoSeeder");
 
 const runSeeders = async () => {
   try {
@@ -9,3 +9,5 @@ const runSeeders = async () => {
     console.error("Error running seeders:", error);
   }
 };
+
+runSeeders();
